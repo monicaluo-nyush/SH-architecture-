@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+<meta charset="UTF-8" />
+<title>Shanghai Architecture for Chinese Language Learners</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+<header class="banner">
+<img src="EW330304.jpg" alt="Course Banner" class="banner-img">
+<img src="logo.png" alt="NYU Shanghai" class="banner-logo">
+<button class="lang-toggle" onclick="toggleLanguage()">中文 | EN</button>
+</header>
+
+<div class="title-wrap title-grid">
+  <h1 
+  data-en="Shanghai Architecture for Chinese Language Learners" 
+  data-zh="走读上海建筑：高级对外汉语进阶课">
+  About the Course
+</h1>
+</div>
+
+<nav class="tab-nav">
+
+  <a 
+    href="#about"
+    data-en="About"
+    data-zh="课程介绍">
+    About
+  </a>
+
+  <a 
+    href="#field-trips"
+    data-en="Field Trips"
+    data-zh="城市走读">
+    Field Trips
+  </a>
+
+  <a 
+    href="#media"
+    data-en="Media"
+    data-zh="媒体报道">
+    Media
+  </a>
+
+  <a 
+    href="#student-work"
+    data-en="Student Work"
+    data-zh="学生项目">
+    Student Work
+  </a>
+
+  <a 
+    href="#partners"
+    data-en="Partners"
+    data-zh="感谢单位">
+    Partners
+  </a>
+
+</nav>
+
+<div class="page-layout">
+
+<aside class="sidebar">
+<h3>Academics</h3>
+<ul>
+<li>Undergraduate Studies</li>
+<li>Academic Affairs</li>
+<li>Curriculum</li>
+<li>Faculty & Research</li>
+<li>Global Programs</li>
+</ul>
+</aside>
+
+<main class="content">
+
+  <section id="about">
+
+    <h2 
+      data-en="About the Course" 
+      data-zh="课程介绍">
+      About the Course
+    </h2>
+  
+    <p
+      data-en="Shanghai, often celebrated as a “Global Museum of Architecture”, offers a living classroom for studying Chinese language, history, and culture. Designed for advanced Chinese language learners, this course uses Shanghai’s rich architectural heritage as a lens through which students strengthen their reading, writing, speaking, and presentation skills while developing a deeper understanding of the city’s cultural identity and urban transformation."
+  
+      data-zh="上海汇聚了不同时期、不同风格的建筑景观，是理解中国近现代城市发展与文化变迁的重要窗口。本课程面向高级阶段的中文学习者，以丰富多元的上海建筑为切入点，帮助学生在真实的城市文化语境中提升中文阅读、写作、口语表达与课堂展示能力，同时加深对上海城市文化、历史记忆与城市变迁的理解。">
+  
+      Shanghai, often celebrated as a “Global Museum of Architecture”, offers a living classroom for studying Chinese language, history, and culture. Designed for advanced Chinese language learners, this course uses Shanghai’s rich architectural heritage as a lens through which students strengthen their reading, writing, speaking, and presentation skills while developing a deeper understanding of the city’s cultural identity and urban transformation.
+  
+    </p>
+  
+    <p
+      data-en="Since its launch in Spring 2023, “Shanghai Architecture for Chinese Language Learners” has become an innovative model for combining advanced Chinese language instruction with experiential cultural learning. In recognition of its distinctive curriculum design and educational impact, the course was selected for the “Shanghai Municipal-Level Undergraduate Key Curriculum Initiative in 2024”."
+  
+      data-zh="自2023年春季开设以来，《走读上海建筑：高级对外汉语进阶课程》逐渐形成了将高级中文语言教学与沉浸式文化体验相结合的创新教学模式。凭借其独特的课程设计与良好的教学成效，本课程入选2024年度上海市重点本科课程建设项目。">
+  
+      Since its launch in Spring 2023, “Shanghai Architecture for Chinese Language Learners” has become an innovative model for combining advanced Chinese language instruction with experiential cultural learning. In recognition of its distinctive curriculum design and educational impact, the course was selected for the “Shanghai Municipal-Level Undergraduate Key Curriculum Initiative in 2024”.
+  
+    </p>
+  
+    <p
+      data-en="Through carefully selected readings, discussions, writing assignments, presentations, and field-based learning, students explore Shanghai’s architectural development across three major periods: the ancient heritage period shaped by Ming and Qing traditions; the cosmopolitan “golden age” of the 1920s and 1930s; and the modern development period marked by new residential communities, urban renewal, and the transformation of the Pudong skyline. The course also examines the preservation of historical buildings, neighborhood life, and the relationship between architecture, memory, and the urban environment."
+  
+      data-zh="课程内容围绕上海建筑发展的三个重要阶段展开：首先是以明清建筑传统为代表的古代建筑遗存；其次是体现20世纪二三十年代“黄金时代”都市风貌的海派建筑与近代建筑；最后是以上海新型居住空间、城市更新以及浦东天际线崛起为代表的当代城市发展。课程还将进一步探讨历史建筑保护、社区生活、城市环境以及建筑与城市记忆之间的关系。">
+  
+      Through carefully selected readings, discussions, writing assignments, presentations, and field-based learning, students explore Shanghai’s architectural development across three major periods: the ancient heritage period shaped by Ming and Qing traditions; the cosmopolitan “golden age” of the 1920s and 1930s; and the modern development period marked by new residential communities, urban renewal, and the transformation of the Pudong skyline. The course also examines the preservation of historical buildings, neighborhood life, and the relationship between architecture, memory, and the urban environment.
+  
+    </p>
+  
+    <p
+      data-en="Through city walks and specially organized field trips, students engage directly with Shanghai’s landmarks, local residences, historic districts, and lesser-known urban spaces. Future course development will continue to expand these routes to include more diverse architectural landscapes, including suburban and rural areas connected to Shanghai’s broader cultural story."
+  
+      data-zh="通过精选阅读材料、课堂讨论、写作训练、专题展示以及实地走读等多种学习形式，学生将有机会走进上海的历史街区、地标建筑、社区空间以及部分具有特色的居住区域，在真实场景中观察、思考并表达。未来，课程也将继续拓展更加多元的城市走读路线，将上海郊区及乡村地区的建筑与文化景观纳入教学内容，帮助学生从更广阔的视角理解上海的城市故事。">
+  
+      Through city walks and specially organized field trips, students engage directly with Shanghai’s landmarks, local residences, historic districts, and lesser-known urban spaces. Future course development will continue to expand these routes to include more diverse architectural landscapes, including suburban and rural areas connected to Shanghai’s broader cultural story.
+  
+    </p>
+  
+    <p
+      data-en="Conducted entirely in Chinese, this course invites students to experience Shanghai not only as a city to visit, but also as a text to read, discuss, and interpret. By connecting language learning with architecture, history, and urban life, students gain greater linguistic confidence, cultural insight, and appreciation for Shanghai’s role as a dynamic international city."
+  
+      data-zh="本课程全程采用中文授课。通过将语言学习与建筑、历史、城市生活相结合，课程不仅帮助学生提升中文综合运用能力，也引导他们重新认识上海这座充满创新精神、文化厚度与国际活力的城市。">
+  
+      Conducted entirely in Chinese, this course invites students to experience Shanghai not only as a city to visit, but also as a text to read, discuss, and interpret. By connecting language learning with architecture, history, and urban life, students gain greater linguistic confidence, cultural insight, and appreciation for Shanghai’s role as a dynamic international city.
+  
+    </p>
+  
+    <h2
+      data-en="Faculty"
+      data-zh="授课教师">
+      Faculty
+    </h2>
+  
+    <div class="faculty">
+      <img src="Gu.jpg" alt="Faculty">
+  
+      <div class="faculty-text">
+
+        <div class="lang-en">
+          <strong>Beilei Gu</strong><br>
+          Senior Language Lecturer of Chinese at NYU Shanghai
+        </div>
+      
+        <div class="lang-zh" style="display:none;">
+          <strong>顾蓓蕾</strong><br>
+          上海纽约大学中文高级讲师
+        </div>
+      
+      </div>
+    </div>
+  
+</section>
+<section id="field-trips" class="field-trips">
+
+  <h2 
+  class="fieldtrip-title"
+  data-en="Learning Chinese Through City Exploration"
+  data-zh="在城市探索中学习中文">
+  
+  Learning Chinese Through City Exploration
+
+</h2>
+
+<div class="district">
+
+  <h3 
+    class="district-title"
+    data-en="Featured Community Classroom: Yuyuan Road"
+    data-zh="特色社区课堂：愚园路">
+    
+    Featured Community Classroom: Yuyuan Road
+
+  </h3>
+  
+    <div class="slideshow">
+      <div class="slides">
+        <img src="33EW2560.jpg" data-caption="Spring 2026 - Yuyuan Road">
+        <img src="WechatIMG286.jpg" data-caption="Spring 2026 - Yuyuan Road" style="object-position:center 75%;">
+        <img src="EW330519.jpg" data-caption="Spring 2026 - Yuyuan Road">
+        <img src="33EW2452.jpg" data-caption="Spring 2026 - Yuyuan Road">
+        <img src="33EW2566.jpg" data-caption="Spring 2023 - Yuyuan Road">
+        <img src="EW330473.jpg" data-caption="Spring 2023 - Yuyuan Road">
+        <img src="WechatIMG289.jpg" data-caption="Spring 2023 - Yuyuan Road">
+        <img src="WechatIMG291.jpg" data-caption="Spring 2023 - Yuyuan Road">
+        <img src="d9f316d3ed29edc9873f08eae34b1df9.jpg" data-caption="Spring 2024 - Yuyuan Road">
+        <img src="IMG_3760.jpeg" data-caption="Spring 2023 - Yuyuan Road">
+        <img src="IMG_3766.jpeg" data-caption="Spring 2023 - Yuyuan Road">
+        <img src="IMG_3800.JPG" data-caption="Spring 2023 - Yuyuan Road">
+        <img src="IMG_3807.JPG" data-caption="Spring 2023 - Yuyuan Road">
+        <img src="3ced3f90b9b95cb1616617b994447bbf.jpg" data-caption="Fall 2019 - Yuyuan Road">
+        <img src="00e71af2c4c5947204821981c06e3b12.jpg" data-caption="Fall 2019 - Yuyuan Road">
+      </div> 
+  
+      <div class="hover-zone left"></div>
+      <div class="hover-zone right"></div>
+  
+      <button class="arrow prev">‹</button>
+      <button class="arrow next">›</button>
+    </div>
+  
+    <p class="caption"></p>
+  </div>
+
+  <!-- ===== Baoshan ===== -->
+  <div class="district">
+    <h3 class="district-title"
+    data-en="Baoshan District"
+    data-zh="宝山区">
+      Baoshan District</h3>
+
+    <div class="slideshow">
+      <div class="slides">
+        <img src="ea1b0b9489b60c73ad7c1eb23cd1198e.jpg" data-caption="Fall 2024 - Baogang Steel" class="active" style="object-position:center 80%;">
+        <img src="059f0a9c5ec4df811f1e3d6087261cf6.jpg" data-caption="Fall 2024 - Baogang Steel" style="object-position:center 50%;">
+        <img src="IMG_9664.jpeg" data-caption="Fall 2024 - Baogang Steel" style="object-position:center 80%;">
+        <img src="IMG_9665.jpeg" data-caption="Fall 2024 - Baogang Steel" style="object-position:center 80%;">
+      </div>
+
+      <div class="hover-zone left"></div>
+      <div class="hover-zone right"></div>
+
+      <button class="arrow prev">‹</button>
+      <button class="arrow next">›</button>
+    </div>
+
+    <p class="caption"></p>
+  </div>
+
+  <!-- ===== Huangpu ===== -->
+  <div class="district">
+    <h3 class="district-title"
+    data-en="Huangpu District"
+    data-zh="黄浦区">Huangpu District</h3>
+
+    <div class="slideshow">
+      <div class="slides">
+        <img src="IMG_4309.jpeg" data-caption="Spring 2024 - Shanghai European American Alumni Association">
+        <img src="IMG_2516.jpeg" data-caption="Spring 2025 - House of Roosevelt" class="active">
+        <img src="IMG_2165.jpeg" data-caption="Spring 2023 - Shanghai European American Alumni Association">
+        <img src="IMG_4297.jpeg" data-caption="Spring 2024 - Shanghai European American Alumni Association">
+        <img src="IMG_8984.JPG" data-caption="Fall 2024 - Shanghai European American Alumni Association">
+        <img src="IMG_4321.jpeg" data-caption="Spring 2023 - PRESS (Original Office of Shenbao Newspaper)" style="object-position:center 30%;">
+        <img src="b42182e2a4a2b4ac682e6984c9aba894.jpg" data-caption="Spring 2024 - The Bund" >
+        <img src="c481dd48a78580f4c765dc533b7d5686.jpg" data-caption="Spring 2024 - The Bund">
+        <img src="IMG_8970.jpeg" data-caption="Fall 2024 - Waldorf Astoria on The Bund">
+        <img src="IMG_8985.JPG" data-caption="Fall 2024 - Waldorf Astoria on The Bund">
+      </div>
+
+      <div class="hover-zone left"></div>
+      <div class="hover-zone right"></div>
+
+      <button class="arrow prev">‹</button>
+      <button class="arrow next">›</button>
+    </div>
+
+    <p class="caption"></p>
+  </div>
+
+  <!-- ===== Jing'an ===== -->
+  <div class="district">
+    <h3 class="district-title"
+    data-en="Jing'an District"
+    data-zh="静安区">Jing'an District</h3>
+
+    <div class="slideshow">
+      <div class="slides">
+        <img src="百乐门3.jpg" data-caption="Spring 2026 - Paramount" class="active">
+        <img src="33EW2417.jpg" data-caption="Spring 2026 - Paramount">
+        <img src="33EW2495.jpg" data-caption="Spring 2026 - Paramount">
+        <img src="33EW2523.jpg" data-caption="Spring 2026 - Paramount">
+        <img src="EW330416.jpg" data-caption="Spring 2023 - Lanes in Jing'an District">
+        <img src="IMG_3741.jpeg" data-caption="Spring 2023 - Jingan Community">
+        <img src="IMG_3726.jpeg" data-caption="Spring 2023 - Jingan Temple" style="object-position:center 90%;">
+        <img src="c8eeafb59660cfdb8f94b174610bfa3e.jpg" data-caption="Spring 2025 - Shanghia's Childrens Palace">
+        <img src="b1c7f97a20caf0af2a407edbae807bfa.jpeg" data-caption="Fall 2025 - Old Time Brand's Museum" style="object-position:center 60%;">
+        <img src="IMG_6394.jpeg" data-caption="Fall 2025 - Old Time Brand's Museum">
+        <img src="IMG_3806.JPG" data-caption="Spring 2023 - Brut Eatery">
+
+      </div>
+
+      <div class="hover-zone left"></div>
+      <div class="hover-zone right"></div>
+
+      <button class="arrow prev">‹</button>
+      <button class="arrow next">›</button>
+    </div>
+
+    <p class="caption"></p>
+  </div>
+
+  <!-- ===== Pudong ===== -->
+  <div class="district">
+    <h3 class="district-title"
+    data-en="Pudong District"
+    data-zh="浦东区">Pudong District</h3>
+
+    <div class="slideshow">
+      <div class="slides">
+
+        <img src="2c114d6fe5e214cbe069879569c81391.jpg" data-caption="Spring 2026 - Mercedes Benz Arena" class="active" style="object-position:center 70%;">
+        <img src="efe58929562e0176aba52557d41d39f1.jpg" data-caption="Spring 2026 - Mercedes Benz Arena" style="object-position:center 60%;">
+        <img src="2b3ea957c1b550005ce32052a39fdbe1.jpg" data-caption="Spring 2026 - Mercedes Benz Arena">
+        <img src="b34afcbf1324fb55cc5c0d672b607afb.jpg" data-caption="Spring 2026 - Mercedes Benz Arena" style="object-position:center 70%;">
+        <img src="4af81c6e9eae7c38fb9153bba377f8c2.jpg" data-caption="Spring 2026 - Mercedes Benz Arena">
+        <img src="0886fb83ca1aa4117795d80be4352635.jpg" data-caption="Spring 2026 - New Bund 31">
+        <img src="f29a5678cb46abc562c18c29d3fab8fb.jpg" data-caption="Spring 2026 - New Bund 31">
+        <img src="f2ee3cad0e14a50ebc616c82118d6002.jpg" data-caption="Spring 2026 - New Bund 31">
+        <img src="d565bc0da32371de7bf00722f6c0bf5a.jpg" data-caption="Spring 2026 - New Bund 31">
+        <img src="17d8793d43ae0210200d35b3e70b3c12.jpg" data-caption="Spring 2024 - China Europe International Business School">
+        <img src="882b98f369db13cd25378268190e5936.jpg" data-caption="Spring 2024 - China Europe International Business School">
+        <img src="IMG_2836.jpeg" data-caption="Spring 2024 - China Europe International Business School">
+        <img src="IMG_2848.jpeg" data-caption="Spring 2024 - China Europe International Business School">
+        <img src="IMG_8975.jpeg" data-caption="Fall 2023 - ECNU No. 2 High School Qiantan Campus – Excellence Workshop">
+        <img src="IMG_8987.jpeg" data-caption="Fall 2023 - ECNU No. 2 High School Qiantan Campus – Excellence Workshop">
+        <img src="IMG_8990.jpeg" data-caption="Fall 2023 - ECNU No. 2 High School Qiantan Campus – Excellence Workshop">
+        <img src="2905dd85ebe5beb79359bb6f7fc1a390.jpeg" data-caption="Fall 2025 - Qiantan 31">
+        <img src="e702b652ed223ea1939fe727c5d55a4e.jpeg" data-caption="Fall 2025 - Qiantan 31">
+        <img src="IMG_3422.JPG" data-caption="Spring 2023 - Qiantan 31">
+        <img src="IMG_3429.JPG" data-caption="Spring 2023 - Qiantan 31">
+        <img src="IMG_3433.JPG" data-caption="Spring 2023 - Qiantan 31">
+        <img src="IMG_3445.JPG" data-caption="Spring 2023 - Qiantan 31">
+        <img src="IMG_3676.jpeg" data-caption="Spring 2025 - Qiantan 31">
+        <img src="IMG_5079.jpeg" data-caption="Spring 2024 - Qiantan 31">
+        <img src="IMG_5080.jpeg" data-caption="Spring 2024 - Qiantan 31">
+        <img src="IMG_9976.jpeg" data-caption="Fall 2024 - Qiantan 31">
+        <img src="2eaaf98f5bc2b4838c0b3fafac1b6107.jpg" data-caption="Fall 2025 - Sanlin Old Street">
+        <img src="2fa4b8f139192d9bb3b90a6b0ea6e49b.jpg" data-caption="Fall 2025 - Sanlin Old Street">
+        <img src="b8de7458a0cee58de335b4a8f8584254.jpg" data-caption="Fall 2025 - Sanlin Old Street">
+        <img src="d036119e8c97db4b861bac1f271788b3.jpg" data-caption="Fall 2025 - Sanlin Old Street">
+        <img src="EW334898.JPG" data-caption="Fall 2025 - Sanlin Old Street">
+        <img src="IMG_7105.JPG" data-caption="Fall 2025 - Sanlin Old Street">
+        <img src="IMG_7106.JPG" data-caption="Fall 2025 - Sanlin Old Street">
+        <img src="IMG_5990.jpeg" data-caption="Fall 2025 - Shanghai Tower">
+        <img src="IMG_6007.jpeg" data-caption="Fall 2025 - Shanghai Tower">
+        <img src="IMG_6008.jpeg" data-caption="Fall 2025 - Shanghai Tower">
+      </div>
+
+      <div class="hover-zone left"></div>
+      <div class="hover-zone right"></div>
+
+      <button class="arrow prev">‹</button>
+      <button class="arrow next">›</button>
+    </div>
+
+    <p class="caption"></p>
+  </div>
+  
+  <div class="district">
+    <h3 class="district-title"
+    data-en="Putuo District"
+    data-zh="普陀区">Putuo District</h3>
+  
+    <div class="slideshow">
+      <div class="slides">
+        <img src="7efecc66c33e8ff5da3431ca3a4e2a04.jpg" data-caption="Spring 2025 - Heatherwick Studios at 1000 Trees" class="active">
+        <img src="e8b96c79aa0a9e105e2bbd0fdd398900.jpeg" data-caption="Spring 2025 - Heatherwick Studios at 1000 Trees">
+        <img src="24eb3c2fa80369ff1be611fbdaf6d630.jpeg" data-caption="Spring 2025 - Heatherwick Studios at 1000 Trees">
+      </div> <!-- ✅ THIS WAS MISSING -->
+  
+      <div class="hover-zone left"></div>
+      <div class="hover-zone right"></div>
+  
+      <button class="arrow prev">‹</button>
+      <button class="arrow next">›</button>
+    </div>
+  
+    <p class="caption"></p>
+  </div>
+
+  <!-- ===== Xuhui ===== -->
+  <div class="district">
+    <h3 class="district-title"
+    data-en="Xuhui District"
+    data-zh="徐汇区">Xuhui District</h3>
+
+    <div class="slideshow">
+      <div class="slides">
+        <img src="6fc4b9f07ff640c1247823b33f1d81d0.jpg" data-caption="Spirng 2026 - Lanes in Yongjia Road" class="active">
+        <img src="24f86cdc6e37e8ee0643f1653e6b5702.jpg" data-caption="Spring 2026 - Wuyuan Road">
+        <img src="a1a1273fca8e11863a36770b355c8cba.jpg" data-caption="Spring 2026 - Wuyuan Road">
+        <img src="343d86467f4b5639cf03b0c9de4f14a1.jpg" data-caption="Spring 2026 - Wuyuan Road">
+        <img src="286f66def237325ce15da6746c6e1042.jpg" data-caption="Spring 2026 - Wuyuan Road">
+        <img src="4c43745965219822d74a9d93714d6440.jpg" data-caption="Spring 2026 - Wuyuan Roadd">
+        <img src="7f6fba2d1cc355a3f4374d1e4ab2222a.jpg" data-caption="Spring 2026 - Wuyuan Road">
+        <img src="b85f12b2e92ae69a756c82d42528b33a.jpg" data-caption="Spring 2026 - Wuyuan Road">
+        <img src="9c47e652c446c77c5885adfb7a3b027b.jpg" data-caption="Spring 2026 - Wuyuan Road">
+        <img src="375ddd79b9681ed397c997a447c62e07.jpg" data-caption="Spirng 2026 - Lanes in Yongjia Road">
+        <img src="1a2bc6974c53450e08c0e8b71ebd0f57.jpg" data-caption="Spirng 2026 - Lanes in Yongjia Road">
+        <img src="6042ad5164cb573ac75ea2735de2c9f8.jpg" data-caption="Spirng 2026 - Lanes in Yongjia Road">
+        <img src="22ff98d7b3a769e86b9fce313ff4ad0b.jpg" data-caption="Spirng 2026 - Lanes in Yongjia Road">
+        <img src="ac77e785ec3c15c02bb14d2e81683031.jpg" data-caption="Spring 2025 - Shanghai Symphony Hall">
+        <img src="IMG_2798.jpeg" data-caption="Spring 2025 - Shanghai Symphony Hall">
+        <img src="IMG_1462.JPG" data-caption="Spring 2023 - Shanghai Symphony Museum">
+        <img src="IMG_1463.JPG" data-caption="Spring 2023 - Shanghai Symphony Museum">
+        <img src="IMG_1464.JPG" data-caption="Spring 2023 - Shanghai Symphony Museum">
+        <img src="4bb106a251d3006cd2861a541c5902ec.jpg" data-caption="Spring 2025 - Shanghai Conservatory of Music">
+        <img src="IMG_3019.jpeg" data-caption="Spring 2024 - Xu Guangqi Memorial Hall" style="object-position:center 70%;">
+        <img src="IMG_1132.JPG" data-caption="Spring 2023 - Wukang Building">
+        <img src="53b1b4ab5ac08ba3d6fb0bac22d5f015.jpg" data-caption="Fall 2025 - Soong Ching Ling Memorial Residence">
+        <img src="58a8edaa11cf1377032639d0dd52f3df.jpg" data-caption="Fall 2025 - Soong Ching Ling Memorial Residence">
+        <img src="d99ed7f9d2a81438da9ef1bb7d8732c0.jpg" data-caption="Fall 2025 - Soong Ching Ling Memorial Residence">
+        <img src="IMG_1126.JPG" data-caption="Spring 2023 - Soong Ching Ling Memorial Residence">
+        <img src="MR2A6146.JPG" data-caption="Spring 2023 - Soong Ching Ling Memorial Residence">
+        <img src="6583d0555093c392460a82fe95b21a85.jpg" data-caption="Spring 2024 - Xuhui Library">
+        <img src="IMG_6607.JPG" data-caption="Fall 2025 - Wukang Building">
+        <img src="IMG_1439.jpeg" data-caption="Spring 2023 - Blackstone Castle">
+      </div>
+
+      <div class="hover-zone left"></div>
+      <div class="hover-zone right"></div>
+
+      <button class="arrow prev">‹</button>
+      <button class="arrow next">›</button>
+    </div>
+
+    <p class="caption"></p>
+  </div>
+
+  <!-- ===== Yangpu ===== -->
+  <div class="district">
+    <h3 class="district-title"
+    data-en="Yangpu District"
+    data-zh="杨浦区">Yangpu District</h3>
+
+    <div class="slideshow">
+      <div class="slides">
+        <img src="897800bdb7dce3e077a205e41d0d2eb8.jpg" data-caption="Fall 2024 - Old Dock of Huangpu (Laomato)">
+        <img src="8b250862cf739bea2064551854c676d5.jpg" data-caption="Fall 2024 - Old Dock of Huangpu (Laomato)">
+        <img src="cf146e58a7bb7d75e1d7977e9b4a227a.jpg" data-caption="Fall 2024 - Old Dock of Huangpu (Laomato)">
+        <img src="IMG_9424.jpeg" data-caption="Fall 2024 - Old Dock of Huangpu (Laomato)">
+        <img src="IMG_8347.jpeg" data-caption="Fall 2024 - Tongji University Museum">
+        <img src="IMG_8359.jpeg" data-caption="Fall 2024 - Tongji University Museum">
+        <img src="IMG_8360.jpeg" data-caption="Fall 2024 - Tongji University">
+      </div>
+
+      <div class="hover-zone left"></div>
+      <div class="hover-zone right"></div>
+
+      <button class="arrow prev">‹</button>
+      <button class="arrow next">›</button>
+    </div>
+
+    <p class="caption"></p>
+  </div>
+
+
+</section>
+
+<section id="media"></section>
+  <h2 data-en="Media" data-zh="媒体报道">Media</h2>
+
+  <div class="card-grid">
+
+    <a class="card" href="https://shanghai.nyu.edu/videos/life-lessons-1000-year-old-tree" target="_blank">
+      <img src="Ginko.jpg">
+      <div class="card-content">
+        <div class="card-title">University Feature</div>
+        <div class="card-subtitle">NYU Shanghai</div>
+      </div>
+    </a>
+
+    <a class="card" href="https://www.instagram.com/p/DUmlkHLkUJO/?img_index=9" target="_blank">
+      <img src="Media2.png">
+      <div class="card-content">
+        <div class="card-title">University Instagram - @nyush</div>
+        <div class="card-subtitle">Spring 2026</div>
+      </div>
+    </a>
+
+    <a class="card" href="https://www.instagram.com/p/DIlX9ZrSORt/?img_index=1" target="_blank">
+      <img src="f0c58238228123c2887b63a2594ba35d.jpeg">
+      <div class="card-content">
+        <div class="card-title">University Instagram - @learnchineseatnyu</div>
+        <div class="card-subtitle">Spring 2025</div>
+      </div>
+    </a>
+
+    <a class="card" href="https://web.shobserver.com/sgh/detail?id=1033942" target="_blank">
+      <img src="media3.jpg">
+      <div class="card-content">
+        <div class="card-title">Shanghai Observer</div>
+        <div class="card-subtitle">Spring 2023</div>
+      </div>
+    </a>
+
+    <a class="card" href="https://mp.weixin.qq.com/s/5WZFzEHPDtlcQptOU_OVAw" target="_blank">
+      <img src="media4.png">
+      <div class="card-content">
+        <div class="card-title">Univeristy Wechat</div>
+        <div class="card-subtitle">Spring 2023</div>
+      </div>
+    </a>
+
+    <a class="card" href="https://mp.weixin.qq.com/s/FUsGBmytgfdH2VYVAUfglA" target="_blank">
+      <img src="media5.jpg">
+      <div class="card-content">
+        <div class="card-title">Xuhui Arts Walk</div>
+        <div class="card-subtitle">Fall 2025</div>
+      </div>
+    </a>
+
+    <a class="card" href="https://mp.weixin.qq.com/s/LEV7Ef5ktXv0UvBzMHw6zQ" target="_blank">
+      <img src="media6.jpg">
+      <div class="card-content">
+        <div class="card-title">University Feature</div>
+        <div class="card-subtitle">Spring 2019</div>
+      </div>
+    </a>
+
+    <a class="card" href="https://mp.weixin.qq.com/s/kNzy0bcJzrYHVcg6rSLQgQ" target="_blank">
+      <img src="media7.jpg">
+      <div class="card-content">
+        <div class="card-title">University Feature</div>
+        <div class="card-subtitle">Spring 2022</div>
+      </div>
+    </a>
+
+    <a class="card" href="https://mp.weixin.qq.com/s/wk-27mM36isd0i13VyEyzw" target="_blank">
+      <img src="media8.png">
+      <div class="card-content">
+        <div class="card-title">NYU Alumni</div>
+        <div class="card-subtitle">Fall 2021</div>
+      </div>
+    </a>
+
+    <a class="card" href="https://mp.weixin.qq.com/s/wipziGro3k4ABqH3dbJW9A" target="_blank">
+      <img src="media9.jpg">
+      <div class="card-content">
+        <div class="card-title">Zaojiu</div>
+        <div class="card-subtitle">Fall 2019</div>
+      </div>
+    </a>
+
+    <a class="card" href="https://mp.weixin.qq.com/s/XYlshXq5Mg2tUuWLdXnw8g" target="_blank">
+      <img src="media10.png">
+      <div class="card-content">
+        <div class="card-title">University Feature</div>
+        <div class="card-subtitle">Fall 2024</div>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<section id="student-work">
+
+  <h2
+    data-en="Students' Shanghai Architecture Project Locations"
+    data-zh="学生上海建筑研究项目地点">
+    
+    Students' Shanghai Architecture Project Locations
+
+  </h2>
+
+  <div id="project-map"></div>
+
+</section>
+
+<section id="partners">
+
+<h2
+  data-en="Partner Institutions"
+  data-zh="感谢单位">
+  Partner Institutions</h2>
+
+<div class="partners-grid">
+
+<a href="https://www.shuntakgroup.com/tc/business/property/portfolio/2235">
+<img src="31.jpg">
+</a>
+
+<a href="https://heatherwick.com/">
+<img src="hs.png">
+</a>
+
+<a href="https://www.ceibs.edu/">
+<img src="ceibs.png">
+</a>
+
+<a href="https://www.bgglsteel.com/">
+<img src="baogang.jpg">
+</a>
+
+<a href="https://www.shh-shrhmuseum.org.cn/lsbwgywwz/historymuseum/News/">
+<img src="history.png">
+</a>
+
+<a href="https://lzhbwg.mofcom.gov.cn/edi_ecms_web_front/thb/thbarea/310000">
+<img src="old_brand.png">
+</a>
+
+<a href="https://www.china-sorsa.org/">
+<img src="sorsa.png">
+</a>
+  
+<a href="https://museum.tongji.edu.cn/main.htm">
+<img src="tj.png">
+</a>
+  
+<a href="https://www.hilton.com/en/hotels/shawawa-waldorf-astoria-shanghai-on-the-bund/">
+<img src="wa.png">
+</a>
+  
+<a href="http://www.xujiahuiorigin.com/zouJin/inner?id=6432b247e5f862b28f80027e095d3294&columnId=d4f0f2448e2a0cabbed64fb2d25cbf94">
+<img src="xjh lib.jpg">
+</a>
+
+<a href="https://www.shsymphony.cn/symphonypc/index.html#/zh-CN/pc">
+<img src="sfso.png">
+</a>
+
+<a href="https://www.shsoong-chingling.com/">
+<img src="sql.jpg">
+</a>
+
+<a href="https://mp.weixin.qq.com/s/1td98eFu3xByj8c2MV67YQ">
+<img src="Laners.jpg">
+</a>
+
+<a href="https://www.mercedes-benzarena.com/en">
+<img src="MB Arena.png">
+</a>
+
+<a href="https://www.nyu.edu/alumni/get-involved/nyu-alumni-association.html?challenge=d06e90d7-4d8f-4b88-9d8c-10b73beb60f1">
+<img src="NYU Alumni.png">
+</a>
+
+<a href="https://mp.weixin.qq.com/s/vttEj0_zHxbcV_XLlfw9AQ">
+<img src="Mamapro.jpg">
+</a>
+
+<a href="https://mp.weixin.qq.com/s/426bVk0asdlp-1pEkzNI-Q">
+<img src="straw.jpg">
+</a>
+
+<a href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MjM5NDU1Mjk1Mw==&action=getalbum&album_id=2814014414046609408&scene=126&sessionid=1778473473926#wechat_redirect">
+<img src="Xuhui Press.jpg">
+</a>
+
+<a href="https://www.nyu.edu/alumni/get-involved/nyu-alumni-association.html?challenge=d06e90d7-4d8f-4b88-9d8c-10b73beb60f1">
+<img src="Clearwave.jpg">
+</a>
+
+<a href="https://m.dianping.com/shop/21718853?msource=applemaps">
+<img src="Press.jpg">
+</a>
+
+<a href="http://www.shdcbq.com/server/api/wechat/index?code=041zm90w3N7F173dxG0w3KaaEg4zm90h&state=123">
+<img src="symph museum.jpg">
+</a>
+
+<a href="https://mp.weixin.qq.com/s/biz7sx80M61KRTB3ECs44A">
+<img src="neili.png">
+</a>
+
+<a href="https://mp.weixin.qq.com/s/OrRtQaP46dLwFN7iVjrpUg">
+<img src="Garden.png">
+</a>
+
+<a href="https://mp.weixin.qq.com/s/VQd3ukEeQkKmRELVQZ9gRg">
+<img src="Levant Art.png">
+</a>
+
+<a href="https://mp.weixin.qq.com/s/Xc4pchig7-MbesMFBstfTw">
+<img src="Linkart.png">
+</a>
+
+<a href="https://mp.weixin.qq.com/s/zMi8p1XkzWtO1lMTsRKyLQ">
+<img src="Jingan.png">
+</a>
+
+<a href="https://mp.weixin.qq.com/s/JN2n8FnTk2oX9F2oKBAHfw">
+<img src="Hunan.png">
+</a>
+
+<a href="https://mp.weixin.qq.com/s/vOmP4w5nL-CS6AdtwnPwlg">
+<img src="Jinghua.png">
+</a>
+
+</div>
+
+</section>
+
+</main>
+</div>
+
+<div id="slideshow-modal" class="modal">
+
+<div class="modal-content">
+
+<button class="prev" onclick="prevSlide()">‹</button>
+
+<img id="slideshow-image">
+
+<div id="slideshow-caption"></div>
+
+<button class="next" onclick="nextSlide()">›</button>
+
+<div class="modal-close" onclick="closeSlideshow()">Close</div>
+
+</div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
