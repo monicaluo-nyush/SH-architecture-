@@ -1,0 +1,423 @@
+/* ==============================
+   GLOBAL
+   ============================== */
+   * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, "Times New Roman", serif;
+  }
+  
+  /* ==============================
+     BANNER (UNCHANGED)
+     ============================== */
+  .banner {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+  }
+  
+  .banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 80%; /* 👈 push focus downward */
+  }
+  
+  .banner-logo {
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    transform: translateX(-550px);
+    height: 56px;
+    z-index: 10;
+  }
+  
+  .lang-toggle {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    padding: 6px 12px;
+    font-size: 13px;
+    background: rgba(255,255,255,0.9);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* ==============================
+     TITLE + NAV
+     ============================== */
+  .title-wrap {
+    max-width: 1100px;
+    margin: 40px auto 20px;
+    padding-left: 260px;
+    padding-right: 20px;
+  }
+  
+  .title-wrap h1 {
+    color: #6b1fa1;
+    font-size: 40px;
+    font-weight: normal;
+  }
+  
+  .tab-nav {
+    display: flex;
+    max-width: 1100px;
+    margin: 0 auto 40px;
+    padding-left: 260px;
+    padding-right: 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .tab-nav a {
+    flex: 1;
+    text-align: center;
+    padding: 14px 0;
+    margin: 0 6px;
+    background: #6b1fa1;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .tab-nav a:hover {
+    background: #57068c;
+  }
+  
+  /* ==============================
+     PAGE LAYOUT
+     ============================== */
+  .page-layout {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .sidebar {
+    font-size: 14px;
+    color: #444;
+  }
+  
+  .sidebar h3 {
+    font-size: 15px;
+    margin-bottom: 12px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+  }
+  
+  .sidebar li {
+    margin-bottom: 10px;
+  }
+  
+  .content {
+    max-width: 720px;
+  }
+  
+  section {
+    margin-bottom: 70px;
+  }
+  
+  h2 {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+  
+  p {
+    line-height: 1.7;
+    margin-bottom: 18px;
+    color: #444;
+  }
+  
+  /* ==============================
+     FACULTY
+     ============================== */
+  .faculty {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .faculty img {
+    width: 140px;
+    border-radius: 6px;
+  }
+  
+/* ==============================
+   FIELD TRIPS SECTION
+   ============================== */
+
+   .field-trips {
+    margin-top: 60px;
+  }
+  
+  .fieldtrip-title {
+    font-size: 26px;
+    margin-bottom: 24px;
+  }
+  
+  /* Year headers (NOT interactive) */
+  .year-heading {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 36px 0 14px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+  }
+  
+  /* Location block */
+  .location-block {
+    margin-bottom: 12px;
+  }
+  
+  /* Location dropdown header (NYU-style) */
+  .location-toggle {
+    width: 100%;
+    background: #f2eef5;
+    color: #6b1fa1;
+    border: 1px solid #ddd;
+    border-left: 4px solid transparent;
+    padding: 14px 18px;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.2s ease, border-color 0.2s ease;
+  }
+  
+  .location-toggle:hover {
+    background: #e9e2f0;
+  }
+  
+  /* Open / active location */
+  .location-block.open .location-toggle {
+    background: #6b1fa1;
+    color: #ffffff;
+    border-color: #6b1fa1;
+    border-left: 4px solid #6b1fa1;
+  }
+  
+  /* Chevron */
+  .chevron {
+    font-size: 14px;
+    transition: transform 0.2s ease;
+  }
+  
+  .location-block.open .chevron {
+    transform: rotate(180deg);
+  }
+  
+  /* Dropdown content container */
+  .location-content {
+    display: none;
+    padding: 20px 20px 26px;
+    background: #fafafa;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-left: 4px solid #6b1fa1;
+  }
+  
+  .location-block.open .location-content {
+    display: block;
+  }
+  
+/* ==============================
+   SLIDESHOW
+   ============================== */
+
+   .district {
+    margin-bottom: 60px;
+  }
+  
+  .district-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  /* Slideshow container */
+  .slideshow {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    height: 500px; /* keeps slides consistent */
+    margin: auto;
+    overflow: hidden;
+    background: #000; /* optional: makes empty space look clean */
+  }
+  
+  .slides {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  .slides img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  
+    width: 100%;
+    height: 100%;
+  
+    object-fit: cover;   /* 🔥 NO CROPPING */
+    object-position: center center;
+  
+    display: none;
+    border-radius: 12px;
+  }
+  
+  .slides img.active {
+    display: block;
+  }
+  /* Hover click zones (left/right navigation) */
+  .hover-zone {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    z-index: 2;
+    cursor: pointer;
+  }
+  
+  .hover-zone.left {
+    left: 0;
+  }
+  
+  .hover-zone.right {
+    right: 0;
+  }
+  
+  /* Arrows */
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    color: white;
+    background: rgba(0,0,0,0.4);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 3;
+  }
+  
+  .arrow.prev {
+    left: 10px;
+  }
+  
+  .arrow.next {
+    right: 10px;
+  }
+  
+  /* Show arrows only on hover */
+  .slideshow:hover .arrow {
+    opacity: 1;
+  }
+  
+  /* Caption */
+  .caption {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  /* ==============================
+     MEDIA CARDS
+     ============================== */
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  .card {
+    cursor: pointer;
+    border: 1px solid #ddd;
+    background: #fff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    background: #eee;
+  }
+  
+  .card-content {
+    padding: 10px;
+  }
+  
+  .card-title {
+    font-size: 15px;
+    font-weight: bold;
+    color: #6b1fa1;
+  }
+  
+  .card-subtitle {
+    font-size: 13px;
+    color: #666;
+    margin-top: 4px;
+  }
+  
+  /* ==============================
+     MAP (STUDENT WORK)
+     ============================== */
+  #project-map {
+    width: 100%;
+    height: 420px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+
+  .leaflet-container {
+    font-family: Georgia, "Times New Roman", serif;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.15);
+  }  
+  
+  /* ==============================
+     PARTNERS
+     ============================== */
+     .partners-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* 4 columns */
+      gap: 40px;
+      justify-items: center;
+      align-items: center;
+      margin-top: 0px;
+    }
+    
+    .partners-grid img {
+      max-height: 90px;
+      max-width: 180px;
+      object-fit: contain;
+    }
+    
+    
+    .partners-grid a:hover img {
+      opacity: 1;
+    }
+
+    #student-work {
+      margin-top: 80px;
+    }
+  
+
+  
